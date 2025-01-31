@@ -1,6 +1,12 @@
 $(document).ready( function () {
-    $('#myTable').DataTable();
+    $('#myTable').DataTable({
+        paging: true,
+        searching: true,
+        ordering: true
+    });
   });
+
+  
   
   function validateForm() {
     const name = document.getElementById('clientName').value;
